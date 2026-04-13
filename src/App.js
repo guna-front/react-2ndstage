@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
 function App() {
+  const name = "guna";
+  function handleClick() {
+    alert("submitted");
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Welcome to my job portal</h1>
+      <p>Hello {name}</p>
+      <button className="apply" onClick={handleClick}>Apply now</button>
     </div>
   );
 }
-
 export default App;
